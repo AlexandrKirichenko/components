@@ -1,0 +1,26 @@
+html {
+  font-family: 'T-Star Pro', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  overflow-y: hidden;
+}
+
+:root {
+  --transition-property: all;
+  --transition-time: 0.3s;
+  --transition-function: ease;
+}
+
+* {
+  transition: var(--transition-property) var(--transition-time)
+  var(--transition-function);
+}
+
+div {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+

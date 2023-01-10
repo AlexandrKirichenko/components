@@ -1,0 +1,17 @@
+@mixin font($size, $height, $weight: 400) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin atMobile() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin atTablet() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
